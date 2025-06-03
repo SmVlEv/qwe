@@ -1,0 +1,33 @@
+﻿@model UnityAssetStore.Models.Order
+
+<h2>Детали заказа</h2>
+
+<p><strong>ID заказа:</strong> @Model.Id</p>
+<p><strong>Дата:</strong> @Model.OrderDate.ToString("yyyy-MM-dd")</p>
+<p><strong>Статус:</strong> @Model.Status</p>
+<p><strong>Итого:</strong> @Model.TotalAmount.ToString("C")</p>
+
+<h3>Позиции заказа</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Наименование</th>
+            <th>Цена за штуку</th>
+            <th>Количество</th>
+            <th>Итого</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.Asset?.Name</td>
+                <td>@(item.UnitPrice)</td>
+                <td>@item.Quantity</td>
+                <td>@((item.UnitPrice * item.Quantity).ToString("C"))</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-controller="Orders" asp-action="Index" class="btn btn-primary">Вернуться к истории заказов</a>

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<UnityAssetStore.Models.Asset>
+
+<h2 class="mb-4">Каталог активов</h2>
+
+<!-- Сообщение об успешном добавлении в корзину -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div id="successAlert" class="alert alert-success alert-dismissible fade show position-fixed top-0 start-50 translate-middle-x mt-3" role="alert" style="z-index: 9999;">
+        @TempData["SuccessMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></button>
+    </div>
+}
+
+<div id="assetsContainer" class="row">
+    @foreach (var asset in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="@asset.PreviewImageUrl" class="card-img-top" alt="@asset.Name" style="height: 200px; object-fit: cover;" />
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">@asset.Name</h5>
+                    <p class="card-text text-muted">@asset.Description</p>
+                    <p><strong>@asset.Price.ToString("C")</strong></p>
+
+                    <!-- Форма добавления в корзину с AJAX -->
+                    <form asp-controller="Cart" asp-action="AddToCart" method="post" class="addToCartForm">
+                        <input type="hidden" name="assetId" value="@asset.Id" />
+                        <button type="submit" class="btn btn-success mt-2 w-100">Добавить в корзину</button>
+                    </form>
+
+                    <!-- Кнопки для администратора -->
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <div class="mt-3 d-grid gap-2">
+                            <a asp-area="Admin" asp-controller="Dashboard" asp-action="Edit" asp-route-id="@asset.Id" class="btn btn-warning btn-sm">Редактировать</a>
+                            <a asp-area="Admin" asp-controller="Dashboard" asp-action="Delete" asp-route-id="@asset.Id" class="btn btn-danger btn-sm">Удалить</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.addToCartForm').on('submit', function (e) {
+                e.preventDefault();
+
+                var form = $(this);
+
+                $.ajax({
+                    url: form.attr('action'),
+                    type: 'POST',
+                    data: form.serialize(),
+                    success: function () {
+                        // Удаляем предыдущее уведомление
+                        $('#successAlert').remove();
+
+                        // Добавляем новое уведомление
+                        $('<div id="successAlert" class="alert alert-success alert-dismissible fade show position-fixed top-0 start-50 translate-middle-x mt-3" role="alert" style="z-index: 9999;">' +
+                            'Товар успешно добавлен в корзину!' +
+                            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                          '</div>').insertBefore('#assetsContainer');
+
+                        // Автоматически скрываем уведомление через 3 секунды
+                        setTimeout(() => $('#successAlert').fadeOut(), 3000);
+                    },
+                    error: function () {
+                        alert('Ошибка при добавлении товара в корзину.');
+                    }
+                });
+            });
+
+            // Закрытие алерта по кнопке "X"
+            $(document).on('click', '.btn-close', function () {
+                $('#successAlert').alert('close');
+            });
+        });
+    </script>
+}

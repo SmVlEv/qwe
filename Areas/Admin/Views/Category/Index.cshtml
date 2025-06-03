@@ -1,0 +1,33 @@
+﻿@model IEnumerable<UnityAssetStore.Models.Category>
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Категории";
+}
+
+<h2>Категории</h2>
+
+<a asp-area="Admin" asp-controller="Category" asp-action="Add" class="btn btn-success mb-3">Добавить новую категорию</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Id</td>
+                <td>@category.Name</td>
+                <td>
+                    <a asp-area="Admin" asp-controller="Category" asp-action="Edit" asp-route-id="@category.Id" class="btn btn-warning btn-sm">Изменить</a>
+                    <a asp-area="Admin" asp-controller="Category" asp-action="Delete" asp-route-id="@category.Id" class="btn btn-danger btn-sm">Удалить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

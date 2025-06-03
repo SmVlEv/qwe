@@ -1,0 +1,19 @@
+﻿@model UnityAssetStore.Models.Category
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Добавить категорию";
+}
+
+<h2>Добавить категорию</h2>
+
+<form asp-area="Admin" asp-controller="Category" asp-action="Add" method="post">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Сохранить</button>
+    <a asp-area="Admin" asp-controller="Category" asp-action="Index" class="btn btn-secondary">Отмена</a>
+</form>

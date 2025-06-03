@@ -1,0 +1,37 @@
+﻿@model IEnumerable<UnityAssetStore.Models.Asset>
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Товары";
+}
+
+<h2>Товары</h2>
+
+<a asp-area="Admin" asp-controller="Dashboard" asp-action="Add" class="btn btn-success mb-3">Добавить новый товар</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Цена</th>
+            <th>Категория</th>
+            <th>Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asset in Model)
+        {
+            <tr>
+                <td>@asset.Id</td>
+                <td>@asset.Name</td>
+                <td>@asset.Price.ToString("C")</td>
+                <td>@asset.Category?.Name</td>
+                <td>
+                    <a asp-area="Admin" asp-controller="Dashboard" asp-action="Edit" asp-route-id="@asset.Id" class="btn btn-warning btn-sm">Изменить</a>
+                    <a asp-area="Admin" asp-controller="Dashboard" asp-action="Delete" asp-route-id="@asset.Id" class="btn btn-danger btn-sm">Удалить</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

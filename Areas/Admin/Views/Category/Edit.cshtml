@@ -1,0 +1,21 @@
+﻿@model UnityAssetStore.Models.Category
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Редактировать категорию";
+}
+
+<h2>Редактировать категорию "@Model.Name"</h2>
+
+<form asp-area="Admin" asp-controller="Category" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+    <a asp-area="Admin" asp-controller="Category" asp-action="Index" class="btn btn-secondary">Отмена</a>
+</form>

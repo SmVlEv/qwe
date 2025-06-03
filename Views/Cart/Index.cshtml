@@ -1,0 +1,46 @@
+﻿@model UnityAssetStore.Models.ShoppingCart
+
+<h2>Корзина</h2>
+
+@if (!Model.Items.Any())
+{
+    <p>Корзина пуста.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Цена за штуку</th>
+                <th>Количество</th>
+                <th>Итого</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td>@item.Asset?.Name</td>
+                    <td>@item.Asset?.Price.ToString("C")</td>
+                    <td>@item.Quantity</td>
+                    <td>@((item.Asset?.Price ?? 0) * item.Quantity)</td>
+                    <td>
+                        <form asp-action="RemoveFromCart" method="post">
+                            <input type="hidden" name="assetId" value="@item.AssetId" />
+                            <button type="submit" class="btn btn-danger btn-sm">Удалить</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="d-grid gap-2">
+        <form asp-controller="Orders" asp-action="Checkout" method="post">
+            <button type="submit" class="btn btn-success">Оформить заказ</button>
+        </form>
+        <a asp-controller="Assets" asp-action="Index" class="btn btn-secondary">Продолжить покупки</a>
+    </div>
+}
