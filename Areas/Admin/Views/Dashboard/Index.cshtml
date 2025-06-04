@@ -16,6 +16,7 @@
             <th>Название</th>
             <th>Цена</th>
             <th>Категория</th>
+            <th>Изображение</th>
             <th>Действие</th>
         </tr>
     </thead>
@@ -27,6 +28,17 @@
                 <td>@asset.Name</td>
                 <td>@asset.Price.ToString("C")</td>
                 <td>@asset.Category?.Name</td>
+                <td>
+                    <!-- Миниатюра изображения -->
+                    @if (!string.IsNullOrEmpty(asset.PreviewImageUrl))
+                    {
+                        <img src="@asset.PreviewImageUrl" alt="@asset.Name" style="max-width: 50px;" />
+                    }
+                    else
+                    {
+                        <span>Нет изображения</span>
+                    }
+                </td>
                 <td>
                     <a asp-area="Admin" asp-controller="Dashboard" asp-action="Edit" asp-route-id="@asset.Id" class="btn btn-warning btn-sm">Изменить</a>
                     <a asp-area="Admin" asp-controller="Dashboard" asp-action="Delete" asp-route-id="@asset.Id" class="btn btn-danger btn-sm">Удалить</a>

@@ -203,7 +203,6 @@ namespace UnityAssetStore.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("PreviewImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
@@ -329,7 +328,6 @@ namespace UnityAssetStore.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("UserId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

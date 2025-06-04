@@ -20,11 +20,8 @@ namespace UnityAssetStore.Models
         [Range(0, 9999.99, ErrorMessage = "Цена должна быть положительной и не более 9999.99")]
         public decimal Price { get; set; }
 
-        [Required(ErrorMessage = "URL изображения обязателен")]
         [Display(Name = "URL превью изображения")]
-        public string PreviewImageUrl { get; set; } = null!;
-
-       
+        public string? PreviewImageUrl { get; set; } = "/img/default.jpg";
 
         [Required(ErrorMessage = "Выберите категорию")]
         [Display(Name = "Категория")]

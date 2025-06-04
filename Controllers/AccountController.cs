@@ -58,7 +58,7 @@ namespace UnityAssetStore.Controllers
                 // Добавление ошибок в ModelState
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    ModelState.AddModelError("", error.Description);
                 }
             }
 
@@ -79,18 +79,22 @@ namespace UnityAssetStore.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
+        public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
 
-            var result = await _signInManager.PasswordSignInAsync(
-                model.Username,
-                model.Password,
-                model.RememberMe,
-                lockoutOnFailure: false);
+            var user = await _userManager.FindByNameAsync(model.Username);
+
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty, "Пользователь с таким логином не существует");
+                return View(model);
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, lockoutOnFailure: false);
 
             if (result.Succeeded)
             {
@@ -104,7 +108,8 @@ namespace UnityAssetStore.Controllers
                 }
             }
 
-            ModelState.AddModelError(string.Empty, "Неверный логин или пароль.");
+            // Если попал сюда — значит, пароль неправильный
+            ModelState.AddModelError(string.Empty, "Логин или пароль указаны неверно");
             return View(model);
         }
 

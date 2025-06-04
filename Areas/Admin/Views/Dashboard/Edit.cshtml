@@ -5,9 +5,9 @@
     ViewData["Title"] = "Редактировать товар";
 }
 
-<h2>Редактировать "@Model.Name"</h2>
+<h2>Редактировать товар</h2>
 
-<form asp-area="Admin" asp-controller="Dashboard" asp-action="Edit" method="post">
+<form asp-area="Admin" asp-controller="Dashboard" asp-action="Edit" method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
 
     <div class="mb-3">
@@ -28,9 +28,10 @@
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
 
+    <!-- Поле для изображения -->
     <div class="mb-3">
-        <label asp-for="PreviewImageUrl"></label>
-        <input asp-for="PreviewImageUrl" class="form-control" />
+        <label asp-for="PreviewImageUrl">Изображение</label>
+        <input type="file" name="ImageFile" accept="image/*" class="form-control" />
         <span asp-validation-for="PreviewImageUrl" class="text-danger"></span>
     </div>
 

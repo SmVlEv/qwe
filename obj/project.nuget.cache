@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZP6Ll4a0+mI=",
+  "dgSpecHash": "4N3Gkcz/HH4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore-main\\UnityAssetStore.csproj",
+  "projectFilePath": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore\\UnityAssetStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SVEK\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\SVEK\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

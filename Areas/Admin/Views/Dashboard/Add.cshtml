@@ -7,7 +7,7 @@
 
 <h2>Добавить товар</h2>
 
-<form asp-area="Admin" asp-controller="Dashboard" asp-action="Add" method="post">
+<form asp-area="Admin" asp-controller="Dashboard" asp-action="Add" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
@@ -26,9 +26,23 @@
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
 
+    <!-- Выпадающий список существующих изображений -->
     <div class="mb-3">
-        <label asp-for="PreviewImageUrl"></label>
-        <input asp-for="PreviewImageUrl" class="form-control" />
+        <label asp-for="PreviewImageUrl">Выбрать изображение из папки</label>
+        <select asp-for="PreviewImageUrl" class="form-select">
+            <option value="">Выберите изображение</option>
+            @foreach (var image in ViewBag.Images)
+            {
+                <option value="@image.Url">@image.Name</option>
+            }
+        </select>
+        <span asp-validation-for="PreviewImageUrl" class="text-danger"></span>
+    </div>
+
+    <!-- Поле для загрузки нового файла -->
+    <div class="mb-3">
+        <label asp-for="PreviewImageUrl">Загрузить новое изображение</label>
+        <input type="file" name="ImageFile" accept="image/*" class="form-control" />
         <span asp-validation-for="PreviewImageUrl" class="text-danger"></span>
     </div>
 

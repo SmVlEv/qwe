@@ -1,0 +1,50 @@
+﻿@model IEnumerable<UnityAssetStore.Models.Identity.ApplicationUser>
+
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Список пользователей";
+}
+
+<h2>Пользователи</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Имя</th>
+            <th>Email</th>
+            <th>Роль</th>
+            <th>Действие</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    @if ((string)ViewBag.Roles[user.Id] == "Admin")
+                    {
+                        <span class="badge bg-danger">Администратор</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Пользователь</span>
+                    }
+                </td>
+                <td>
+                    @if ((string)ViewBag.Roles[user.Id] != "Admin")
+                    {
+                        <a asp-action="Delete" asp-route-id="@user.Id" class="btn btn-danger btn-sm">Удалить</a>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Недоступно</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

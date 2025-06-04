@@ -9911,11 +9911,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore-main\\UnityAssetStore.csproj",
+      "projectUniqueName": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore\\UnityAssetStore.csproj",
       "projectName": "UnityAssetStore",
-      "projectPath": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore-main\\UnityAssetStore.csproj",
+      "projectPath": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore\\UnityAssetStore.csproj",
       "packagesPath": "C:\\Users\\SVEK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore-main\\obj\\",
+      "outputPath": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

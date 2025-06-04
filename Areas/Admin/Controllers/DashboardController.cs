@@ -1,30 +1,38 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using UnityAssetStore.Data;
 using UnityAssetStore.Models;
 using UnityAssetStore.Services;
+using UnityAssetStore.Data;
+using Microsoft.Extensions.Hosting;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace UnityAssetStore.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")] // Только администратор может использовать
     public class DashboardController : Controller
     {
-        private readonly AppDbContext _context;
         private readonly IAssetService _assetService;
+        private readonly AppDbContext _context;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-        public DashboardController(AppDbContext context, IAssetService assetService)
+        public DashboardController(
+            IAssetService assetService,
+            AppDbContext context,
+            IWebHostEnvironment hostEnvironment)
         {
-            _context = context;
             _assetService = assetService;
+            _context = context;
+            _hostEnvironment = hostEnvironment;
         }
 
         // GET: /Admin/Dashboard/Index
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var assets = _context.Assets.Include(a => a.Category).ToList();
+            var assets = await _assetService.GetAllAssetsAsync();
             return View(assets);
         }
 
@@ -33,57 +41,106 @@ namespace UnityAssetStore.Areas.Admin.Controllers
         public IActionResult Add()
         {
             SetCategorySelectList();
+            SetImagesSelectList();
             return View();
         }
 
         // POST: /Admin/Dashboard/Add
         [HttpPost]
-        public IActionResult Add(Asset model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Add(Asset model, IFormFile ImageFile)
         {
             if (!ModelState.IsValid)
             {
                 SetCategorySelectList();
+                SetImagesSelectList();
                 return View(model);
             }
 
-            _context.Assets.Add(model);
-            _context.SaveChanges();
+            // Если выбран файл — сохраняем его
+            if (ImageFile != null && ImageFile.Length > 0)
+            {
+                var webRootPath = _hostEnvironment.WebRootPath;
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(ImageFile.FileName);
+                var filePath = Path.Combine(webRootPath, "img", fileName);
 
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await ImageFile.CopyToAsync(stream);
+                }
+
+                model.PreviewImageUrl = $"/img/{fileName}";
+            }
+            else if (!string.IsNullOrEmpty(model.PreviewImageUrl) && !model.PreviewImageUrl.StartsWith("http"))
+            {
+                // Если изображение выбрано из выпадающего списка — используем локальный путь
+                model.PreviewImageUrl = model.PreviewImageUrl;
+            }
+
+            await _assetService.AddAssetAsync(model);
             return RedirectToAction("Index");
         }
 
         // GET: /Admin/Dashboard/Edit/5
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var asset = _context.Assets.Find(id);
+            var asset = await _assetService.GetAssetByIdAsync(id);
             if (asset == null) return NotFound();
 
             SetCategorySelectList(asset.CategoryId);
+            SetImagesSelectList(); // Для выбора изображения при редактировании
             return View(asset);
         }
 
         // POST: /Admin/Dashboard/Edit
         [HttpPost]
-        public IActionResult Edit(Asset model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Asset model, IFormFile? ImageFile)
         {
             if (!ModelState.IsValid)
             {
                 SetCategorySelectList(model.CategoryId);
+                SetImagesSelectList();
                 return View(model);
             }
 
-            _context.Assets.Update(model);
-            _context.SaveChanges();
+            // Если загружено новое изображение — удаляем старое и сохраняем новое
+            if (ImageFile?.Length > 0)
+            {
+                // Удалить старое изображение, если оно не дефолтное
+                if (!string.IsNullOrEmpty(model.PreviewImageUrl) &&
+                    !model.PreviewImageUrl.Contains("default.jpg"))
+                {
+                    var oldImagePath = Path.Combine(_hostEnvironment.WebRootPath, "img", Path.GetFileName(model.PreviewImageUrl));
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
 
+                // Сохраняем новое изображение
+                var webRootPath = _hostEnvironment.WebRootPath;
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(ImageFile.FileName);
+                var filePath = Path.Combine(webRootPath, "img", fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await ImageFile.CopyToAsync(stream);
+                }
+
+                model.PreviewImageUrl = $"/img/{fileName}";
+            }
+
+            await _assetService.UpdateAssetAsync(model.Id, model);
             return RedirectToAction("Index");
         }
 
         // GET: /Admin/Dashboard/Delete/5
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var asset = _context.Assets.Find(id);
+            var asset = await _assetService.GetAssetByIdAsync(id);
             if (asset == null) return NotFound();
 
             return View(asset);
@@ -91,23 +148,47 @@ namespace UnityAssetStore.Areas.Admin.Controllers
 
         // POST: /Admin/Dashboard/DeleteConfirmed
         [HttpPost]
-        public IActionResult DeleteConfirmed(int id)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var asset = _context.Assets.Find(id);
-            if (asset != null)
+            var asset = await _assetService.GetAssetByIdAsync(id);
+            if (asset == null) return NotFound();
+
+            // Не удалять изображение администратора или системные файлы
+            if (!string.IsNullOrEmpty(asset.PreviewImageUrl) &&
+                !asset.PreviewImageUrl.Contains("default.jpg"))
             {
-                _context.Assets.Remove(asset);
-                _context.SaveChanges();
+                var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "img", Path.GetFileName(asset.PreviewImageUrl));
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
             }
 
+            await _assetService.DeleteAssetAsync(id);
             return RedirectToAction("Index");
         }
 
-        // Вспомогательный метод для заполнения выпадающего списка категорий
+        // Метод для заполнения выпадающего списка категорий
         private void SetCategorySelectList(int selectedCategoryId = 0)
         {
             var categories = _context.Categories.ToList();
             ViewBag.Categories = new SelectList(categories, "Id", "Name", selectedCategoryId);
+        }
+
+        // Метод для заполнения выпадающего списка изображений
+        private void SetImagesSelectList()
+        {
+            var images = Directory.GetFiles(Path.Combine(_hostEnvironment.WebRootPath, "img"))
+                                  .Where(file => file.EndsWith(".jpg") || file.EndsWith(".png"))
+                                  .Select(file => new
+                                  {
+                                      Name = Path.GetFileName(file),
+                                      Url = $"/img/{Path.GetFileName(file)}"
+                                  })
+                                  .ToList();
+
+            ViewBag.Images = images;
         }
     }
 }

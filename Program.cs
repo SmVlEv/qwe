@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// 2. Identity: используем ApplicationUser и IdentityRole
+// 2. Настройка Identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
@@ -20,7 +20,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
     .AddDefaultTokenProviders();
 
 // 3. Добавляем Session
-builder.Services.AddDistributedMemoryCache(); // Требуется для Session
+builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -28,8 +28,9 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
-// 4. MVC
+// 4. MVC и Razor Pages
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages(); // Для Identity UI
 
 // 5. Регистрация сервисов
 builder.Services.AddScoped<IAssetService, AssetService>();
@@ -37,14 +38,9 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 
-
-// 6. Добавь Razor Pages (если используешь Identity UI)
-builder.Services.AddRazorPages();
-
 var app = builder.Build();
 
 // Конфигурация middleware
-
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -95,7 +91,6 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Маршруты
-// Маршрут для Area "Admin" (должен быть выше дефолтного)
 app.MapControllerRoute(
     name: "areas",
     pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");

@@ -6,17 +6,17 @@ namespace UnityAssetStore.ViewModels
     {
         [Required(ErrorMessage = "Имя пользователя обязательно")]
         [Display(Name = "Имя пользователя")]
-        public string Username { get; set; }
+        public string Username { get; set; } = null!;
 
         [Required(ErrorMessage = "Пароль обязателен")]
         [DataType(DataType.Password)]
         [Display(Name = "Пароль")]
-        public string Password { get; set; }
+        public string Password { get; set; } = null!;
 
         [Display(Name = "Запомнить меня")]
         public bool RememberMe { get; set; }
 
-        // Добавлено: ReturnUrl для перенаправления после входа
+        [Display(Name = "Вернуться на предыдущую страницу")]
         public string? ReturnUrl { get; set; }
     }
 }

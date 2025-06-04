@@ -1,22 +1,35 @@
-﻿@model LoginViewModel
+﻿@model UnityAssetStore.ViewModels.LoginViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Вход в аккаунт";
+}
 
 <h2>Вход в аккаунт</h2>
 
 <form asp-action="Login" method="post">
     <input type="hidden" asp-for="ReturnUrl" />
+
     <div class="mb-3">
-        <label asp-for="Username" class="form-label"></label>
+        <label asp-for="Username"></label>
         <input asp-for="Username" class="form-control" />
         <span asp-validation-for="Username" class="text-danger"></span>
     </div>
+
     <div class="mb-3">
-        <label asp-for="Password" class="form-label"></label>
+        <label asp-for="Password"></label>
         <input asp-for="Password" type="password" class="form-control" />
         <span asp-validation-for="Password" class="text-danger"></span>
     </div>
+
     <div class="mb-3 form-check">
         <input asp-for="RememberMe" class="form-check-input" />
         <label asp-for="RememberMe" class="form-check-label">Запомнить меня</label>
     </div>
-    <button type="submit" class="btn btn-primary">Войти</button>
+
+    <!-- Отображение ошибок -->
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+    <button type="submit" class="btn btn-success">Войти</button>
+    <a asp-controller="Account" asp-action="Register" class="btn btn-secondary">Зарегистрироваться</a>
 </form>
