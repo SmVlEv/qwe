@@ -1,9 +1,9 @@
 wwwroot\css\admin.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\img\7d4432fa-d26b-4e52-8d95-ad681bae8bd3.jpg
-wwwroot\img\86e48933-2cd6-4b17-9b0e-e1964ad70468.jpg
+wwwroot\img\7841b217-3d36-4d01-ad4d-7d9b9fc53049.png
 wwwroot\img\default.jpg
+wwwroot\img\e071efb7-f08e-4705-928a-32409e7ca7ba.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

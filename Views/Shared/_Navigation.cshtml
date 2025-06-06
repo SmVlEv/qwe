@@ -28,8 +28,12 @@
                         <a class="nav-link text-success" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Админка</a>
                     </li>
                 }
+                <form asp-controller="Assets" asp-action="Index" method="get" class="d-flex ms-auto">
+                    <input type="text" name="searchQuery" placeholder="Поиск товаров..." class="form-control me-2" />
+                    <button type="submit" class="btn btn-outline-success">🔍</button>
+                </form>
             </ul>
-
+           
             <!-- Правая часть меню: Войти / Зарегистрироваться / Выйти -->
             <ul class="navbar-nav ms-auto">
                 @if (User.Identity.IsAuthenticated)

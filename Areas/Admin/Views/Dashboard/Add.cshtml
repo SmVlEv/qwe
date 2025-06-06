@@ -26,19 +26,7 @@
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
 
-    <!-- Выпадающий список существующих изображений -->
-    <div class="mb-3">
-        <label asp-for="PreviewImageUrl">Выбрать изображение из папки</label>
-        <select asp-for="PreviewImageUrl" class="form-select">
-            <option value="">Выберите изображение</option>
-            @foreach (var image in ViewBag.Images)
-            {
-                <option value="@image.Url">@image.Name</option>
-            }
-        </select>
-        <span asp-validation-for="PreviewImageUrl" class="text-danger"></span>
-    </div>
-
+   
     <!-- Поле для загрузки нового файла -->
     <div class="mb-3">
         <label asp-for="PreviewImageUrl">Загрузить новое изображение</label>

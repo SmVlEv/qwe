@@ -77,20 +77,48 @@ namespace UnityAssetStore.Services
         public async Task DeleteAssetAsync(int id)
         {
             var asset = await _context.Assets.FindAsync(id);
-            if (asset == null) throw new ArgumentException("Товар не найден", nameof(id));
+            if (asset == null)
+                throw new ArgumentException("Товар не найден", nameof(id));
 
-            // Удалить изображение из папки /wwwroot/img
-            if (!string.IsNullOrEmpty(asset.PreviewImageUrl))
+            // Проверяем, является ли изображение дефолтным
+            if (asset.PreviewImageUrl != "/img/default.jpg")
             {
-                var imagePath = Path.Combine(_hostEnvironment.WebRootPath, "img", Path.GetFileName(asset.PreviewImageUrl));
-                if (System.IO.File.Exists(imagePath))
+                // Удаление только если это не дефолтное изображение
+                try
                 {
-                    System.IO.File.Delete(imagePath);
+                    // Здесь можно добавить логику для удаления файла из wwwroot/img
+                    // Например:
+                    // string imagePath = Path.Combine(_hostEnvironment.WebRootPath, "img", Path.GetFileName(asset.PreviewImageUrl));
+                    // if (System.IO.File.Exists(imagePath))
+                    // {
+                    //     System.IO.File.Delete(imagePath);
+                    // }
+
+                    _context.Assets.Remove(asset);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateException ex)
+                {
+                    throw new InvalidOperationException(
+                        "Не удалось удалить товар. Возможно, он используется в других записях.", ex);
                 }
             }
+            else
+            {
+                // Для дефолтного изображения просто удаляем запись в базе данных
+                _context.Assets.Remove(asset);
+                await _context.SaveChangesAsync();
+            }
+        }
+        public async Task<IEnumerable<Asset>> SearchAssetsAsync(string query)
+        {
+            var lowerQuery = query.ToLower();
 
-            _context.Assets.Remove(asset);
-            await _context.SaveChangesAsync();
+            return await _context.Assets
+                .Include(a => a.Category)
+                .Where(a => a.Name.ToLower().Contains(lowerQuery) ||
+                            (a.Category != null && a.Category.Name.ToLower().Contains(lowerQuery)))
+                .ToListAsync();
         }
     }
 }

@@ -45,10 +45,9 @@ namespace UnityAssetStore.Areas.Admin.Controllers
             return View();
         }
 
-        // POST: /Admin/Dashboard/Add
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Add(Asset model, IFormFile ImageFile)
+        public async Task<IActionResult> Add(Asset model, IFormFile? ImageFile)
         {
             if (!ModelState.IsValid)
             {
@@ -57,7 +56,7 @@ namespace UnityAssetStore.Areas.Admin.Controllers
                 return View(model);
             }
 
-            // Если выбран файл — сохраняем его
+            // Если загружено новое изображение
             if (ImageFile != null && ImageFile.Length > 0)
             {
                 var webRootPath = _hostEnvironment.WebRootPath;
@@ -71,14 +70,29 @@ namespace UnityAssetStore.Areas.Admin.Controllers
 
                 model.PreviewImageUrl = $"/img/{fileName}";
             }
-            else if (!string.IsNullOrEmpty(model.PreviewImageUrl) && !model.PreviewImageUrl.StartsWith("http"))
+            else if (!string.IsNullOrEmpty(model.PreviewImageUrl) && !model.PreviewImageUrl.Contains("default.jpg"))
             {
-                // Если изображение выбрано из выпадающего списка — используем локальный путь
+                // Если выбрано изображение из списка
                 model.PreviewImageUrl = model.PreviewImageUrl;
             }
+            else
+            {
+                // Если ничего не выбрано — используем дефолтное изображение
+                model.PreviewImageUrl = "/img/default.jpg";
+            }
 
-            await _assetService.AddAssetAsync(model);
-            return RedirectToAction("Index");
+            try
+            {
+                await _assetService.AddAssetAsync(model);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Ошибка при добавлении товара: {ex.Message}");
+                SetCategorySelectList();
+                SetImagesSelectList();
+                return View(model);
+            }
         }
 
         // GET: /Admin/Dashboard/Edit/5

@@ -11,5 +11,6 @@ namespace UnityAssetStore.Services
         Task AddAssetAsync(Asset asset);
         Task UpdateAssetAsync(int id, Asset updatedAsset);
         Task DeleteAssetAsync(int id);
+        Task<IEnumerable<Asset>> SearchAssetsAsync(string query);
     }
 }

@@ -1,11 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using UnityAssetStore.Data;
 using UnityAssetStore.Models;
 using UnityAssetStore.Services;
-using System.Linq;
-using System.Threading.Tasks;
 
 public class CartService : ICartService
 {
@@ -17,7 +19,7 @@ public class CartService : ICartService
         _context = context;
     }
 
-    // --- Работа с Session (гости) ---
+    // --- Работа с Session (для гостей) ---
 
     public ShoppingCart GetCart(ISession session)
     {
@@ -26,8 +28,9 @@ public class CartService : ICartService
             return new ShoppingCart();
 
         var cart = JsonConvert.DeserializeObject<ShoppingCart>(cartJson);
+        if (cart == null)
+            return new ShoppingCart();
 
-        // Загружаем Asset для отображения
         foreach (var item in cart.Items)
         {
             item.Asset = _context.Assets.Find(item.AssetId);
@@ -36,29 +39,28 @@ public class CartService : ICartService
         return cart;
     }
 
-    public ShoppingCart AddToCart(ISession session, int assetId)
+    public void AddToCart(ISession session, int assetId)
     {
         var cart = GetCart(session);
+        var existingItem = cart.Items.FirstOrDefault(i => i.AssetId == assetId);
 
         var asset = _context.Assets.Find(assetId);
         if (asset == null)
             throw new ArgumentException("Товар не найден", nameof(assetId));
 
-        var item = cart.Items.FirstOrDefault(i => i.AssetId == assetId);
-        if (item == null)
+        if (existingItem != null)
         {
-            cart.Items.Add(new CartItem { AssetId = assetId, Quantity = 1 });
+            existingItem.Quantity++;
         }
         else
         {
-            item.Quantity++;
+            cart.Items.Add(new CartItem { AssetId = assetId, Quantity = 1 });
         }
 
         SaveCart(session, cart);
-        return cart;
     }
 
-    public ShoppingCart RemoveFromCart(ISession session, int assetId)
+    public void RemoveFromCart(ISession session, int assetId)
     {
         var cart = GetCart(session);
         var item = cart.Items.FirstOrDefault(i => i.AssetId == assetId);
@@ -68,8 +70,6 @@ public class CartService : ICartService
             cart.Items.Remove(item);
             SaveCart(session, cart);
         }
-
-        return cart;
     }
 
     public void ClearCart(ISession session)
@@ -83,16 +83,19 @@ public class CartService : ICartService
         session.SetString(SessionKey, cartJson);
     }
 
-    // --- Работа с UserId (авторизованные пользователи) ---
+    // --- Работа с пользователем (UserId) ---
 
     public async Task AddToCartAsync(string userId, int assetId)
     {
         var existingItem = await _context.CartItems
-            .Where(c => c.UserId == userId && c.AssetId == assetId)
-            .Include(c => c.Asset)
-            .FirstOrDefaultAsync();
+            .FirstOrDefaultAsync(c => c.UserId == userId && c.AssetId == assetId);
 
-        if (existingItem == null)
+        if (existingItem != null)
+        {
+            existingItem.Quantity += 1;
+            _context.CartItems.Update(existingItem);
+        }
+        else
         {
             var asset = await _context.Assets.FindAsync(assetId);
             if (asset == null)
@@ -105,11 +108,6 @@ public class CartService : ICartService
                 Quantity = 1
             });
         }
-        else
-        {
-            existingItem.Quantity += 1;
-            _context.CartItems.Update(existingItem);
-        }
 
         await _context.SaveChangesAsync();
     }
@@ -117,9 +115,7 @@ public class CartService : ICartService
     public async Task RemoveFromCartAsync(string userId, int assetId)
     {
         var item = await _context.CartItems
-            .Include(c => c.Asset)
-            .Where(c => c.UserId == userId)
-            .FirstOrDefaultAsync(c => c.AssetId == assetId);
+            .FirstOrDefaultAsync(c => c.UserId == userId && c.AssetId == assetId);
 
         if (item != null)
         {
@@ -134,5 +130,21 @@ public class CartService : ICartService
             .Where(c => c.UserId == userId)
             .Include(c => c.Asset)
             .ToList();
+    }
+
+    // --- Метод для переноса из Session в UserId ---
+
+    public async Task TransferCartFromSessionToUserAsync(ISession session, string userId)
+    {
+        var cart = GetCart(session);
+        foreach (var item in cart.Items)
+        {
+            for (int i = 0; i < item.Quantity; i++)
+            {
+                await AddToCartAsync(userId, item.AssetId);
+            }
+        }
+
+        ClearCart(session); // Очистка корзины гостя
     }
 }

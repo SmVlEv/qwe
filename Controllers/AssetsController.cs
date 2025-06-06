@@ -1,31 +1,43 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UnityAssetStore.Data;
+using UnityAssetStore.Models;
+using UnityAssetStore.Services;
+using System.Threading.Tasks;
 
 namespace UnityAssetStore.Controllers
 {
     public class AssetsController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly IAssetService _assetService;
 
-        public AssetsController(AppDbContext context)
+        public AssetsController(IAssetService assetService)
         {
-            _context = context;
+            _assetService = assetService;
         }
 
-        // GET: /<controller>/
-        public IActionResult Index()
+        // GET: /Assets/Index
+        public async Task<IActionResult> Index(string searchQuery)
         {
-            var assets = _context.Assets.ToList();
+            IEnumerable<Asset> assets;
+
+            if (!string.IsNullOrEmpty(searchQuery))
+            {
+                // Поиск по имени товара или категории
+                assets = await _assetService.SearchAssetsAsync(searchQuery.Trim());
+            }
+            else
+            {
+                assets = await _assetService.GetAllAssetsAsync();
+            }
+
             return View(assets);
         }
 
-        // GET: /<controller>/Details/5
-        public IActionResult Details(int id)
+        // GET: /Assets/Details/5
+        public async Task<IActionResult> Details(int id)
         {
-            var asset = _context.Assets.FirstOrDefault(a => a.Id == id);
-
-            if (asset == null)
-                return NotFound();
+            var asset = await _assetService.GetAssetByIdAsync(id);
+            if (asset == null) return NotFound();
 
             return View(asset);
         }

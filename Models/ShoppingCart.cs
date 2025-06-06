@@ -1,13 +1,16 @@
-﻿namespace UnityAssetStore.Models
+﻿using System.Collections.Generic;
+
+namespace UnityAssetStore.Models
 {
+    using System.Collections.Generic;
+
     public class ShoppingCart
     {
-        public string UserId { get; set; } // Можно использовать Session ID или IdentityUser.Id
-        public List<CartItem> Items { get; set; } = new List<CartItem>();
+        public List<CartItem> Items { get; set; } = new();
 
         public decimal TotalPrice()
         {
-            return Items.Sum(i => i.Asset.Price * i.Quantity);
+            return Items.Sum(i => i.Asset?.Price * i.Quantity ?? 0);
         }
     }
 }

@@ -1,18 +1,24 @@
 ﻿@model UnityAssetStore.Models.Order
 
-<h2>Детали заказа</h2>
+<h2>Детали заказа №@Model.Id</h2>
 
-<p><strong>ID заказа:</strong> @Model.Id</p>
-<p><strong>Дата:</strong> @Model.OrderDate.ToString("yyyy-MM-dd")</p>
-<p><strong>Статус:</strong> @Model.Status</p>
-<p><strong>Итого:</strong> @Model.TotalAmount.ToString("C")</p>
+<dl class="row">
+    <dt class="col-sm-3">Дата:</dt>
+    <dd class="col-sm-9">@Model.OrderDate.ToShortDateString()</dd>
 
-<h3>Позиции заказа</h3>
+    <dt class="col-sm-3">Статус:</dt>
+    <dd class="col-sm-9">@Model.Status</dd>
+
+    <dt class="col-sm-3">Сумма:</dt>
+    <dd class="col-sm-9">@Model.TotalAmount.ToString("C")</dd>
+</dl>
+
+<h4>Товары:</h4>
 <table class="table">
     <thead>
         <tr>
-            <th>Наименование</th>
-            <th>Цена за штуку</th>
+            <th>Название</th>
+            <th>Цена</th>
             <th>Количество</th>
             <th>Итого</th>
         </tr>
@@ -22,12 +28,10 @@
         {
             <tr>
                 <td>@item.Asset?.Name</td>
-                <td>@(item.UnitPrice)</td>
+                <td>@item.Asset?.Price.ToString("C")</td>
                 <td>@item.Quantity</td>
-                <td>@((item.UnitPrice * item.Quantity).ToString("C"))</td>
+                <td>@(item.Asset?.Price * item.Quantity)</td>
             </tr>
         }
     </tbody>
 </table>
-
-<a asp-controller="Orders" asp-action="Index" class="btn btn-primary">Вернуться к истории заказов</a>

@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using UnityAssetStore.Models.Identity;
 using UnityAssetStore.ViewModels;
+using Microsoft.AspNetCore.Http;
+using UnityAssetStore.Services;
 
 namespace UnityAssetStore.Controllers
 {
@@ -10,18 +12,21 @@ namespace UnityAssetStore.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly ICartService _cartService;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager)
+            SignInManager<ApplicationUser> signInManager,
+            ICartService cartService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _cartService = cartService;
         }
 
         // GET: /Account/Register
         [HttpGet]
-        [AllowAnonymous] // Разрешаем доступ без авторизации
+        [AllowAnonymous]
         public IActionResult Register()
         {
             return View();
@@ -47,29 +52,30 @@ namespace UnityAssetStore.Controllers
 
                 if (result.Succeeded)
                 {
-                    // Назначение роли "User" новому пользователю
+                    // Назначаем роль "User" новому пользователю
                     await _userManager.AddToRoleAsync(user, "User");
+
+                    // Перенос товаров из Session в корзину пользователя
+                    await _cartService.TransferCartFromSessionToUserAsync(HttpContext.Session, user.Id);
 
                     // Автоматический вход после регистрации
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("Index", "Home");
                 }
 
-                // Добавление ошибок в ModelState
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError("", error.Description);
                 }
             }
 
-            // Если мы дошли досюда — модель невалидна или регистрация не удалась
             return View(model);
         }
 
         // GET: /Account/Login
         [HttpGet]
         [AllowAnonymous]
-        public IActionResult Login(string returnUrl)
+        public IActionResult Login(string? returnUrl)
         {
             ViewData["ReturnUrl"] = returnUrl;
             return View();
@@ -87,7 +93,6 @@ namespace UnityAssetStore.Controllers
             }
 
             var user = await _userManager.FindByNameAsync(model.Username);
-
             if (user == null)
             {
                 ModelState.AddModelError(string.Empty, "Пользователь с таким логином не существует");
@@ -95,10 +100,28 @@ namespace UnityAssetStore.Controllers
             }
 
             var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, lockoutOnFailure: false);
-
             if (result.Succeeded)
             {
-                if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                // Перенос товаров из Session в корзину пользователя
+                await _cartService.TransferCartFromSessionToUserAsync(HttpContext.Session, user.Id);
+
+                // Проверяем наличие товаров в корзине
+                var cartItems = _cartService.GetCartItems(user.Id);
+
+                if (cartItems.Any())
+                {
+                    // Перенаправляем на страницу деталей последнего товара
+                    var lastAssetId = cartItems.Last().AssetId;
+                    return RedirectToAction("Details", "Assets", new { id = lastAssetId });
+                }
+
+                // Если returnUrl не указан или это просто вход на /Account/Login
+                if (string.IsNullOrEmpty(returnUrl) || returnUrl == "/Orders")
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+
+                if (Url.IsLocalUrl(returnUrl))
                 {
                     return Redirect(returnUrl);
                 }
@@ -108,8 +131,7 @@ namespace UnityAssetStore.Controllers
                 }
             }
 
-            // Если попал сюда — значит, пароль неправильный
-            ModelState.AddModelError(string.Empty, "Логин или пароль указаны неверно");
+            ModelState.AddModelError(string.Empty, "Неверный логин или пароль.");
             return View(model);
         }
 

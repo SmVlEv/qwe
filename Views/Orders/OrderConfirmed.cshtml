@@ -1,6 +1,10 @@
-﻿<h2>Ваш заказ оформлен!</h2>
-<p>Спасибо за покупку.</p>
-<p><strong>ID заказа:</strong> @ViewBag.OrderId</p>
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Заказ оформлен";
+}
 
-<a asp-controller="Orders" asp-action="Index" class="btn btn-primary">Посмотреть историю заказов</a>
-<a asp-controller="Home" asp-action="Index" class="btn btn-primary">Продолжить покупки</a>
+<h2>Ваш заказ успешно оформлен!</h2>
+<p>Номер заказа: <strong>@ViewBag.OrderId</strong></p>
+
+<a asp-action="Index" class="btn btn-primary">Перейти к моим заказам</a>
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Продолжить покупки</a>

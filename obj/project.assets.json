@@ -9893,6 +9893,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Microsoft.AspNetCore.Http >= 2.3.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.0",
       "Microsoft.AspNetCore.Identity.UI >= 8.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 8.0.0",
@@ -9911,11 +9912,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore\\UnityAssetStore.csproj",
+      "projectUniqueName": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\UnityAssetStore.csproj",
       "projectName": "UnityAssetStore",
-      "projectPath": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore\\UnityAssetStore.csproj",
+      "projectPath": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\UnityAssetStore.csproj",
       "packagesPath": "C:\\Users\\SVEK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SVEK\\Desktop\\UnityAssetStore\\obj\\",
+      "outputPath": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9954,6 +9955,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Http": {
+            "target": "Package",
+            "version": "[2.3.0, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.0, )"

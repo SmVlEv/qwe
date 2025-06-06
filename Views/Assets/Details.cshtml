@@ -17,15 +17,24 @@
             <p><strong>Цена:</strong> @Model.Price.ToString("C")</p>
             <p>@Model.Description</p>
 
-            <!-- Форма добавления в корзину -->
-            <form id="addToCartForm" asp-controller="Cart" asp-action="AddToCart" method="post">
+            <!-- Форма добавления в корзину (по желанию) -->
+            <form asp-controller="Cart" asp-action="AddToCart" method="post">
                 <input type="hidden" name="assetId" value="@Model.Id" />
                 <button type="submit" class="btn btn-success">Добавить в корзину</button>
             </form>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <form asp-controller="Orders" asp-action="CreateDirect" method="post" class="mt-3">
+                    <input type="hidden" name="assetId" value="@Model.Id" />
+                    <button type="submit" class="btn btn-primary">Оформить заказ</button>
+                </form>
+            }
+           
         </div>
     </div>
+</div>
 
-    <!-- Кнопки админа (отображаются только если пользователь имеет роль "Admin") -->
+    <!-- Кнопки для админа -->
     @if (User.IsInRole("Admin"))
     {
         <hr />
@@ -34,10 +43,13 @@
             <a asp-area="Admin" asp-controller="Dashboard" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Удалить товар</a>
         </div>
     }
-</div>
+
+    <!-- Кнопка оформления заказа -->
+    
+   
 
 @section Scripts {
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/+k8ITto+5HQAsx1HCoJadGbdnEAdgDoFleA7zw4wNgdY=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
             $('#addToCartForm').on('submit', function (e) {
@@ -50,7 +62,12 @@
                     type: 'POST',
                     data: form.serialize(),
                     success: function () {
-                        alert('Товар успешно добавлен в корзину!');
+                        $('#successAlert').remove();
+                        $('<div id="successAlert" class="alert alert-success alert-dismissible fade show position-fixed top-0 start-50 translate-middle-x mt-3" role="alert" style="z-index: 9999;">' +
+                            'Товар успешно добавлен в корзину!' +
+                            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>' +
+                          '</div>').insertBefore('#assetsContainer');
+                        setTimeout(() => $('#successAlert').fadeOut(), 3000);
                     },
                     error: function () {
                         alert('Ошибка при добавлении товара в корзину.');
