@@ -1,9 +1,26 @@
-﻿@{
+﻿@model IEnumerable<UnityAssetStore.Models.Asset>
+
+@{
     ViewData["Title"] = "Главная";
 }
+<img src="~/img/logo.png" alt="Логотип Unity Asset Store" class="img-fluid mb-4" style="max-width: 50%;">
+<h2>Популярные товары</h2>
 
-<div class="text-center mt-5">
-    <h1 class="display-4">Добро пожаловать в Unity Asset Store</h1>
-    <p class="lead">Здесь вы можете найти лучшие активы для ваших проектов на Unity.</p>
-    <a class="btn btn-primary btn-lg" asp-controller="Assets" asp-action="Index">Посмотреть каталог</a>
+<div class="row">
+    @foreach (var asset in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <a asp-controller="Assets" asp-action="Details" asp-route-id="@asset.Id" class="text-decoration-none">
+                <div class="card h-100 shadow-sm">
+                    <img src="@asset.PreviewImageUrl" class="card-img-top" alt="@asset.Name" style="height: 200px; object-fit: cover;" />
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@asset.Name</h5>
+                        <p class="card-text text-muted">@asset.Description</p>
+                        <p><strong>@asset.Price.ToString("C")</strong></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
 </div>

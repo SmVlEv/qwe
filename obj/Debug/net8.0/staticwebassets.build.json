@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1m012WDrMiFq/OQEeSGWOwoRZ5sb/os4X0shxi+QeG8=",
+  "Hash": "JrmzRlb+VENFqINOX0hkfuDvyQQB6250EWFMSNTwP6M=",
   "Source": "UnityAssetStore",
   "BasePath": "_content/UnityAssetStore",
   "Mode": "Default",
@@ -1424,12 +1424,12 @@
       "OriginalItemSpec": "wwwroot\\img\\default.jpg"
     },
     {
-      "Identity": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\img\\e071efb7-f08e-4705-928a-32409e7ca7ba.jpg",
+      "Identity": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\img\\logo.png",
       "SourceId": "UnityAssetStore",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\",
       "BasePath": "_content/UnityAssetStore",
-      "RelativePath": "img/e071efb7-f08e-4705-928a-32409e7ca7ba#[.{fingerprint}]?.jpg",
+      "RelativePath": "img/logo#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1438,11 +1438,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kgavo4yefz",
-      "Integrity": "tI5KQgmv9URFunRsPJhWimrGRd4KzJtSBIgcA1uynIk=",
+      "Fingerprint": "yd9w3vxndy",
+      "Integrity": "hoZL1B4VYb1RwuQxyNHtQrsmcXDVFLFSIMQ831Q3/d0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\e071efb7-f08e-4705-928a-32409e7ca7ba.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\logo.png"
     },
     {
       "Identity": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\js\\site.js",
@@ -5295,8 +5295,8 @@
       ]
     },
     {
-      "Route": "img/e071efb7-f08e-4705-928a-32409e7ca7ba.jpg",
-      "AssetFile": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\img\\e071efb7-f08e-4705-928a-32409e7ca7ba.jpg",
+      "Route": "img/logo.png",
+      "AssetFile": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\img\\logo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5305,19 +5305,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "306608"
+          "Value": "29890"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"tI5KQgmv9URFunRsPJhWimrGRd4KzJtSBIgcA1uynIk=\""
+          "Value": "\"hoZL1B4VYb1RwuQxyNHtQrsmcXDVFLFSIMQ831Q3/d0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 05:50:39 GMT"
+          "Value": "Sat, 07 Jun 2025 01:22:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5327,13 +5327,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tI5KQgmv9URFunRsPJhWimrGRd4KzJtSBIgcA1uynIk="
+          "Value": "sha256-hoZL1B4VYb1RwuQxyNHtQrsmcXDVFLFSIMQ831Q3/d0="
         }
       ]
     },
     {
-      "Route": "img/e071efb7-f08e-4705-928a-32409e7ca7ba.kgavo4yefz.jpg",
-      "AssetFile": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\img\\e071efb7-f08e-4705-928a-32409e7ca7ba.jpg",
+      "Route": "img/logo.yd9w3vxndy.png",
+      "AssetFile": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\img\\logo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5342,19 +5342,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "306608"
+          "Value": "29890"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"tI5KQgmv9URFunRsPJhWimrGRd4KzJtSBIgcA1uynIk=\""
+          "Value": "\"hoZL1B4VYb1RwuQxyNHtQrsmcXDVFLFSIMQ831Q3/d0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 06 Jun 2025 05:50:39 GMT"
+          "Value": "Sat, 07 Jun 2025 01:22:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5364,15 +5364,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kgavo4yefz"
+          "Value": "yd9w3vxndy"
         },
         {
           "Name": "label",
-          "Value": "img/e071efb7-f08e-4705-928a-32409e7ca7ba.jpg"
+          "Value": "img/logo.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tI5KQgmv9URFunRsPJhWimrGRd4KzJtSBIgcA1uynIk="
+          "Value": "sha256-hoZL1B4VYb1RwuQxyNHtQrsmcXDVFLFSIMQ831Q3/d0="
         }
       ]
     },

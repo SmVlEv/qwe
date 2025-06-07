@@ -37,7 +37,10 @@ namespace UnityAssetStore.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var asset = await _assetService.GetAssetByIdAsync(id);
-            if (asset == null) return NotFound();
+            if (asset == null)
+            {
+                return NotFound();
+            }
 
             return View(asset);
         }

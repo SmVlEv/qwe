@@ -3,7 +3,7 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\img\7841b217-3d36-4d01-ad4d-7d9b9fc53049.png
 wwwroot\img\default.jpg
-wwwroot\img\e071efb7-f08e-4705-928a-32409e7ca7ba.jpg
+wwwroot\img\logo.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
