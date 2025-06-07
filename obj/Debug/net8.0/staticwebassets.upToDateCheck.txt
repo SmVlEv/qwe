@@ -1,8 +1,11 @@
 wwwroot\css\admin.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\img\7841b217-3d36-4d01-ad4d-7d9b9fc53049.png
+wwwroot\img\2abe0c6b-63b9-4828-b3c5-eb9a11778749.png
+wwwroot\img\609fca55-9b01-4ad0-bff5-a2899f815614.png
+wwwroot\img\9547a368-319f-4cff-a268-24e9a84623a8.png
 wwwroot\img\default.jpg
+wwwroot\img\eb754d8d-a899-4cb2-ad11-d5aeb7e1efe0.png
 wwwroot\img\logo.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

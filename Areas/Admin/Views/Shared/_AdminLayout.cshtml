@@ -1,52 +1,106 @@
 ﻿<!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="admin-theme">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewBag.Title - Админка Unity Asset Store</title>
+    <title>@ViewBag.Title - Админ-панель Unity Asset Store</title>
 
-    <!-- Подключаем Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-          rel="stylesheet" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Подключаем стили сайта (если есть кастомные) -->
-    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <!-- Admin CSS -->
+    <link href="~/css/admin.css" rel="stylesheet" asp-append-version="true" />
+
+    @RenderSection("Styles", required: false)
 </head>
 <body>
+    <div class="admin-wrapper">
+        <!-- Боковое меню -->
+        <!-- Упрощенная админ-панель с удаленными нереализованными функциями -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Админ-панель</a>
 
-    <div class="d-flex">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+                                <i class="bi bi-house-door"></i> Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Add">
+                                <i class="bi bi-plus-circle"></i> Добавить товар
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">
+                                <i class="bi bi-tags"></i> Категории
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="Users" asp-action="Index">
+                                <i class="bi bi-people"></i> Пользователи
+                            </a>
+                        </li>
+                    </ul>
 
-        <!-- Боковое меню админки -->
-        <nav style="min-width: 250px; max-width: 250px; background: #f8f9fa; padding: 1rem;">
-            <h4>Админ меню</h4>
-            <ul class="nav flex-column mt-3">
-                <li class="nav-item mb-2">
-                    <a class="btn btn-primary w-100" href="/Admin/Dashboard/Index">Главная</a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a class="btn btn-success w-100" href="/Admin/Dashboard/Add">Добавить товар</a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a class="btn btn-warning w-100" href="/Admin/Category/Index">Категории</a>
-                </li>
-                <li class="nav-item mt-4 pt-3 border-top">
-                    <a class="btn btn-outline-info w-100" href="/Admin/Users/Index">Пользователи</a>
-                </li>
-                <li class="nav-item mt-4 pt-3 border-top">
-                    <a class="btn btn-danger w-100" href="/">← На сайт</a>
-                </li>
-            </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/" target="_blank">
+                                <i class="bi bi-globe"></i> На сайт
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <!-- Основной контент -->
-        <main class="p-4 w-100">
-            @RenderBody()
+        <main class="admin-content">
+            <!-- Хедер -->
+            <header class="admin-header bg-white shadow-sm py-3">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <button class="btn btn-sm btn-outline-secondary d-md-none" id="sidebarToggle">
+                            <i class="bi bi-list"></i>
+                        </button>
+
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <a href="#" class="d-block text-decoration-none dropdown-toggle"
+                                   >
+                                    <i class="bi bi-person-circle me-2"></i>
+                                    <span>Администратор</span>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Контент -->
+            <div class="admin-container">
+                @RenderBody()
+            </div>
         </main>
     </div>
 
     <!-- Подключаем JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
 
+    <!-- Скрипт для управления меню -->
+    <script>
+        document.getElementById('sidebarToggle').addEventListener('click', function() {
+            document.querySelector('.admin-wrapper').classList.toggle('sidebar-collapsed');
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

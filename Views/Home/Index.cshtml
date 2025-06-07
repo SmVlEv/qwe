@@ -3,24 +3,44 @@
 @{
     ViewData["Title"] = "Главная";
 }
-<img src="~/img/logo.png" alt="Логотип Unity Asset Store" class="img-fluid mb-4" style="max-width: 50%;">
-<h2>Популярные товары</h2>
 
+<!-- Форма фильтрации по категориям -->
+<form method="get" asp-controller="Home" asp-action="Index" class="mb-4">
+    <label for="categoryId">Выберите категорию:</label>
+    <select name="categoryId" id="categoryId" class="form-select w-50 d-inline-block me-2" onchange="this.form.submit()">
+        <option value="0">Все категории</option>
+        @foreach (var category in ViewBag.Categories)
+        {
+            <option value="@category.Id">@category.Name</option>
+        }
+    </select>
+    <button type="submit" class="btn btn-primary">Показать</button>
+</form>
+
+<!-- Карточки товаров -->
 <div class="row">
-    @foreach (var asset in Model)
+    @if (!Model.Any())
     {
-        <div class="col-md-4 mb-4">
-            <a asp-controller="Assets" asp-action="Details" asp-route-id="@asset.Id" class="text-decoration-none">
-                <div class="card h-100 shadow-sm">
-                    <img src="@asset.PreviewImageUrl" class="card-img-top" alt="@asset.Name" style="height: 200px; object-fit: cover;" />
-
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">@asset.Name</h5>
-                        <p class="card-text text-muted">@asset.Description</p>
-                        <p><strong>@asset.Price.ToString("C")</strong></p>
-                    </div>
-                </div>
-            </a>
+        <div class="col-md-12">
+            <p class="text-muted">Нет товаров в выбранной категории.</p>
         </div>
+    }
+    else
+    {
+        foreach (var asset in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <a asp-controller="Assets" asp-action="Details" asp-route-id="@asset.Id" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm">
+                        <img src="@asset.PreviewImageUrl" class="card-img-top" alt="@asset.Name" style="height: 200px; object-fit: cover;" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@asset.Name</h5>
+                            <p class="card-text text-muted">@asset.Description</p>
+                            <p><strong>@asset.Price.ToString("C")</strong></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
     }
 </div>

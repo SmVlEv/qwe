@@ -3,48 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\controllers\\assetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:controllers\\assetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\services\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:services\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\dashboard\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\dashboard\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\assets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\assets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\assets\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\assets\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\shared\\_navigation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -55,28 +15,132 @@
       "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\orders\\orderconfirmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\orders\\orderconfirmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\dashboard\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\dashboard\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\dashboard\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\dashboard\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\dashboard\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\dashboard\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\category\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\category\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:services\\assetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\services\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:services\\iassetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\controllers\\assetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:controllers\\assetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\assets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\assets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\assets\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\assets\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\orders\\orderconfirmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\orders\\orderconfirmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\models\\asset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -135,10 +199,6 @@
       "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -147,28 +207,12 @@
       "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -181,34 +225,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:services\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\category\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\category\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\models\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|c:\\users\\svek\\source\\repos\\unityassetstore\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A4F709AD-DF32-339D-B0F5-2DB04C388D37}|UnityAssetStore.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -218,7 +234,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -230,133 +246,267 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAssetService.cs",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\IAssetService.cs",
-              "RelativeDocumentMoniker": "Services\\IAssetService.cs",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\IAssetService.cs",
-              "RelativeToolTip": "Services\\IAssetService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T22:58:31.375Z",
+              "DocumentIndex": 7,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Delete.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwCkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T22:36:29.437Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Assets\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Assets\\Details.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Assets\\Details.cshtml",
-              "RelativeToolTip": "Views\\Assets\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAALAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwFsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-05T19:23:56.975Z"
+              "WhenOpened": "2025-06-03T22:34:11.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "admin.css",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\css\\admin.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\admin.css",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\css\\admin.css",
+              "RelativeToolTip": "wwwroot\\css\\admin.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-07T01:48:15.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T22:27:19.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwCwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T22:27:24.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAFMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T21:49:11.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T21:23:09.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T06:32:42.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Navigation.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_Navigation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Navigation.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_Navigation.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Navigation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T06:33:50.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Assets\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Assets\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Assets\\Index.cshtml",
-              "RelativeToolTip": "Views\\Assets\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T23:34:05.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Add.cshtml",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Add.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Add.cshtml",
               "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Add.cshtml",
               "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Add.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T22:34:17.076Z"
+              "WhenOpened": "2025-06-03T22:34:17.076Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T21:49:40.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T21:49:34.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T21:53:59.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Edit.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAUwHUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T22:36:13.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T22:27:43.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Add.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Add.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Add.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Add.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T22:26:40.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T16:17:51.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\DashboardController.cs",
               "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "Areas\\Admin\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwF8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAiwM8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T21:53:59.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABMAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T21:53:59.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-06T06:32:36.162Z",
+              "WhenOpened": "2025-06-04T16:17:14.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AssetService.cs",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\AssetService.cs",
-              "RelativeDocumentMoniker": "Services\\AssetService.cs",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\AssetService.cs",
-              "RelativeToolTip": "Services\\AssetService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAHkAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Models\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Models\\DashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Models\\DashboardViewModel.cs",
+              "RelativeToolTip": "Areas\\Admin\\Models\\DashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T22:55:23.06Z",
+              "WhenOpened": "2025-06-03T21:53:55.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AssetsController.cs",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\AssetsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AssetsController.cs",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\AssetsController.cs",
-              "RelativeToolTip": "Controllers\\AssetsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T19:24:24.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T01:25:43.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 28,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
@@ -364,48 +514,109 @@
               "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-07T01:26:48.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T01:26:48.3Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_Navigation.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_Navigation.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Navigation.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_Navigation.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Navigation.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-06T06:33:50.902Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T19:25:40.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAQwIcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T16:05:33.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
+              "Title": "AssetService.cs",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\AssetService.cs",
+              "RelativeDocumentMoniker": "Services\\AssetService.cs",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\AssetService.cs",
+              "RelativeToolTip": "Services\\AssetService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwIAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T22:55:23.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IAssetService.cs",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\IAssetService.cs",
+              "RelativeDocumentMoniker": "Services\\IAssetService.cs",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\IAssetService.cs",
+              "RelativeToolTip": "Services\\IAssetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T22:58:31.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T01:25:43.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T06:32:36.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwPYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-07T01:48:13.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AssetsController.cs",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\AssetsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AssetsController.cs",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\AssetsController.cs",
+              "RelativeToolTip": "Controllers\\AssetsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T19:24:24.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T05:13:18.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Orders\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
@@ -417,19 +628,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAEAAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T22:36:13.395Z"
+              "WhenOpened": "2025-06-07T02:30:12.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Assets\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Assets\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Assets\\Index.cshtml",
+              "RelativeToolTip": "Views\\Assets\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-03T23:34:05.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Assets\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Assets\\Details.cshtml",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Assets\\Details.cshtml",
+              "RelativeToolTip": "Views\\Assets\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T19:23:56.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T19:25:40.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "Asset.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Models\\Asset.cs",
               "RelativeDocumentMoniker": "Models\\Asset.cs",
@@ -441,19 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-06T06:32:42.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 36,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -465,19 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Delete.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T22:36:29.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 34,
               "Title": "OrderConfirmed.cshtml",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Orders\\OrderConfirmed.cshtml",
               "RelativeDocumentMoniker": "Views\\Orders\\OrderConfirmed.cshtml",
@@ -489,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 39,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -501,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 40,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Models\\Identity\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Models\\Identity\\ApplicationUser.cs",
@@ -513,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 37,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\CartService.cs",
               "RelativeDocumentMoniker": "Services\\CartService.cs",
@@ -525,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 38,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\ICartService.cs",
               "RelativeDocumentMoniker": "Services\\ICartService.cs",
@@ -537,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 42,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "Models\\CartItem.cs",
@@ -549,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 41,
               "Title": "ShoppingCart.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Models\\ShoppingCart.cs",
               "RelativeDocumentMoniker": "Models\\ShoppingCart.cs",
@@ -561,7 +784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 43,
               "Title": "CategoryService.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\CategoryService.cs",
               "RelativeDocumentMoniker": "Services\\CategoryService.cs",
@@ -573,7 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 44,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "Services\\OrderService.cs",
@@ -585,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 47,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Models\\OrderItem.cs",
               "RelativeDocumentMoniker": "Models\\OrderItem.cs",
@@ -597,7 +820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 46,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Orders\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Orders\\Details.cshtml",
@@ -609,7 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 45,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\IOrderService.cs",
               "RelativeDocumentMoniker": "Services\\IOrderService.cs",
@@ -621,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 48,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
@@ -633,19 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T22:34:11.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 49,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
@@ -657,19 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T16:17:51.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 51,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Users\\Delete.cshtml",
               "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Users\\Delete.cshtml",
@@ -681,19 +880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T21:49:11.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 52,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
@@ -705,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 50,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
@@ -717,31 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAowCoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T16:17:14.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T16:05:05.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 53,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -753,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 54,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
@@ -765,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 55,
               "Title": "ICategoryService.cs",
               "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Services\\ICategoryService.cs",
               "RelativeDocumentMoniker": "Services\\ICategoryService.cs",
@@ -774,90 +937,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T23:04:06.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Delete.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T22:27:43.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T22:27:24.577Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T22:27:19.428Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Add.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Category\\Add.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\Category\\Add.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Category\\Add.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T22:26:40.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "DashboardViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Models\\DashboardViewModel.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Models\\DashboardViewModel.cs",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Models\\DashboardViewModel.cs",
-              "RelativeToolTip": "Areas\\Admin\\Models\\DashboardViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T21:53:55.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T21:49:40.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\SVEK\\source\\repos\\UnityAssetStore\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-03T21:49:34.454Z"
             }
           ]
         }

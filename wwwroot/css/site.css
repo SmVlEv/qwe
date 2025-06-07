@@ -29,3 +29,219 @@ body {
 .card-footer {
     background-color: #f8f9fa;
 }
+/* ======= ОСНОВНАЯ ТЕМА ======= */
+.unity-theme {
+    background-color: #121212; /* Основной тёмный фон */
+    color: #e0e0e0; /* Цвет текста */
+    min-height: 100vh; /* Минимальная высота на весь экран */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.unity-container {
+    max-width: 1600px; /* Максимальная ширина контента */
+    margin: 0 auto; /* Центрирование */
+    padding: 20px; /* Отступы внутри контейнера */
+}
+
+/* ======= НАВИГАЦИЯ ======= */
+.unity-navbar {
+    background-color: #1a1a1a !important; /* Цвет навбара */
+    border-bottom: 1px solid #333; /* Граница снизу */
+    padding: 10px 0; /* Внутренние отступы */
+    position: sticky; /* Липкое меню */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Стили для поиска в навбаре */
+.unity-search {
+    background-color: #2a2a2a; /* Фон поиска */
+    border: 1px solid #333; /* Граница */
+    color: #fff; /* Цвет текста */
+    width: 300px; /* Ширина */
+    transition: all 0.3s; /* Плавные изменения */
+}
+
+    /* При фокусе на поиске */
+    .unity-search:focus {
+        background-color: #2a2a2a;
+        border-color: #4d9eff; /* Цвет границы при фокусе */
+        color: #fff;
+        box-shadow: 0 0 0 0.25rem rgba(77, 158, 255, 0.25); /* Свечение */
+    }
+
+/* ======= КАРТОЧКИ АССЕТОВ ======= */
+.unity-asset-card {
+    background-color: #1e1e1e; /* Фон карточки */
+    border-radius: 8px; /* Закругление углов */
+    overflow: hidden; /* Обрезка содержимого по границам */
+    transition: transform 0.3s, box-shadow 0.3s; /* Анимации */
+    border: 1px solid #333; /* Граница */
+    height: 100%; /* Высота на всю доступную высоту */
+    display: flex;
+    flex-direction: column;
+}
+
+    /* Эффект при наведении на карточку */
+    .unity-asset-card:hover {
+        transform: translateY(-5px); /* Сдвиг вверх */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Тень */
+    }
+
+    /* Изображение в карточке */
+    .unity-asset-card .card-img-top {
+        height: 180px; /* Фиксированная высота */
+        object-fit: cover; /* Растягивание с сохранением пропорций */
+        border-bottom: 1px solid #333; /* Граница снизу */
+    }
+
+    /* Тело карточки */
+    .unity-asset-card .card-body {
+        padding: 15px; /* Отступы внутри */
+        flex-grow: 1; /* Растягиваем на всю доступную высоту */
+        display: flex;
+        flex-direction: column;
+    }
+
+/* Заголовок ассета */
+.unity-title {
+    color: #fff; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s; /* Плавное изменение цвета */
+    font-size: 1.1rem; /* Размер шрифта */
+    font-weight: 600; /* Жирность */
+    margin-bottom: 8px;
+}
+
+    .unity-title:hover {
+        color: #4d9eff; /* Цвет при наведении */
+    }
+
+/* Автор ассета */
+.card-author {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Цена */
+.unity-price {
+    font-weight: bold;
+    color: #4CAF50; /* Зеленый цвет для цены */
+    font-size: 1.1rem;
+}
+
+/* Кнопка добавления в корзину */
+.unity-btn {
+    background-color: #4d9eff; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Без границы */
+    padding: 6px 12px; /* Отступы внутри */
+    border-radius: 4px; /* Закругление углов */
+    transition: background-color 0.3s; /* Анимация фона */
+    font-size: 0.9rem; /* Размер шрифта */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: auto; /* Прижимаем кнопку к низу карточки */
+}
+
+    .unity-btn:hover {
+        background-color: #3a7bc8; /* Цвет при наведении */
+    }
+
+/* ======= ГЕРОЙ-БАННЕР ======= */
+.unity-hero {
+    background-size: cover; /* Растягиваем фон на всю область */
+    background-position: center; /* Центрируем фон */
+    padding: 80px 0; /* Отступы сверху и снизу */
+    text-align: center; /* Выравнивание текста по центру */
+    color: white; /* Цвет текста */
+    margin-bottom: 40px; /* Отступ снизу */
+    border-radius: 10px; /* Закругление углов */
+    overflow: hidden; /* Обрезаем содержимое по границам */
+}
+
+    .unity-hero h1 {
+        font-size: 2.5rem; /* Размер заголовка */
+        font-weight: 700; /* Жирность */
+        margin-bottom: 20px; /* Отступ снизу */
+    }
+
+    .unity-hero p {
+        font-size: 1.25rem; /* Размер текста */
+        max-width: 600px; /* Максимальная ширина */
+        margin: 0 auto; /* Центрирование */
+    }
+
+/* ======= ФУТЕР ======= */
+.unity-footer {
+    background-color: #1a1a1a; /* Фон футера */
+    border-top: 1px solid #333; /* Граница сверху */
+    padding: 30px 0; /* Отступы */
+    margin-top: 40px; /* Отступ сверху */
+}
+
+    .unity-footer p {
+        margin: 0; /* Убираем отступы */
+        color: #aaa; /* Цвет текста */
+    }
+
+/* ======= КОРЗИНА ======= */
+.cart-item {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+}
+
+.cart-total {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+/* ======= АДАПТИВНОСТЬ ======= */
+@media (max-width: 768px) {
+    .unity-search {
+        width: 100%; /* Ширина на всю доступную ширину */
+        margin-bottom: 10px; /* Отступ снизу */
+    }
+
+    .unity-hero {
+        padding: 40px 0; /* Уменьшаем отступы */
+    }
+
+        .unity-hero h1 {
+            font-size: 2rem; /* Уменьшаем размер заголовка */
+        }
+
+        .unity-hero p {
+            font-size: 1rem; /* Уменьшаем размер текста */
+        }
+
+    /* Карточки на мобильных занимают всю ширину */
+    .unity-asset-card {
+        margin-bottom: 20px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+    }
+}
+
+/* ======= УТИЛИТАРНЫЕ КЛАССЫ ======= */
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.text-center {
+    text-align: center !important;
+}

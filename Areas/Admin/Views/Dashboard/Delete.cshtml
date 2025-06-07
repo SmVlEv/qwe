@@ -1,10 +1,71 @@
 ﻿@model UnityAssetStore.Models.Asset
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    ViewData["Title"] = "Удалить товар";
+}
 
-<h2>Удалить товар?</h2>
-<p>Вы уверены, что хотите удалить "@Model.Name"?</p>
+<div class="admin-container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1><i class="bi bi-trash me-2"></i> @ViewData["Title"]</h1>
+        <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index"
+           class="btn btn-admin btn-admin-outline-secondary">
+            <i class="bi bi-arrow-left"></i> Назад
+        </a>
+    </div>
 
-<form asp-area="Admin" asp-controller="Dashboard" asp-action="DeleteConfirmed" method="post">
-    <input type="hidden" asp-for="Id" />
-    <button type="submit" class="btn btn-danger">Удалить</button>
-    <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="btn btn-secondary">Отмена</a>
-</form>
+    <div class="alert alert-danger">
+        <h4><i class="bi bi-exclamation-triangle"></i> Внимание!</h4>
+        <p>Вы уверены, что хотите удалить товар <strong>"@Model.Name"</strong>?</p>
+        <p class="mt-2">Это действие невозможно отменить.</p>
+    </div>
+
+    <div class="card admin-card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    @if (!string.IsNullOrEmpty(Model.PreviewImageUrl))
+                    {
+                        <img src="@Model.PreviewImageUrl" alt="@Model.Name"
+                             class="img-fluid rounded mb-3" style="max-height: 200px;">
+                    }
+                    else
+                    {
+                        <div class="bg-light p-5 text-center">
+                            <i class="bi bi-image fs-1 text-muted"></i>
+                            <p class="mt-2">Нет изображения</p>
+                        </div>
+                    }
+                </div>
+                <div class="col-md-8">
+                    <dl class="row">
+                        <dt class="col-sm-4">ID товара:</dt>
+                        <dd class="col-sm-8">@Model.Id</dd>
+
+                        <dt class="col-sm-4">Название:</dt>
+                        <dd class="col-sm-8">@Model.Name</dd>
+
+                        <dt class="col-sm-4">Цена:</dt>
+                        <dd class="col-sm-8">@Model.Price.ToString("C")</dd>
+
+                        <dt class="col-sm-4">Категория:</dt>
+                        <dd class="col-sm-8">@Model.Category?.Name</dd>
+                    </dl>
+
+                    <div class="mt-3">
+                        <h5>Описание:</h5>
+                        <p class="text-muted">@Model.Description</p>
+                    </div>
+                </div>
+            </div>
+
+            <form asp-area="Admin" asp-controller="Dashboard" asp-action="DeleteConfirmed" method="post">
+                <input type="hidden" asp-for="Id" />
+                <div class="d-flex justify-content-end mt-4">
+                    <button type="submit" class="btn btn-admin btn-admin-danger">
+                        <i class="bi bi-trash"></i> Подтвердить удаление
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

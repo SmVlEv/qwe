@@ -120,5 +120,12 @@ namespace UnityAssetStore.Services
                             (a.Category != null && a.Category.Name.ToLower().Contains(lowerQuery)))
                 .ToListAsync();
         }
+        public async Task<IEnumerable<Asset>> GetAssetsByCategoryIdAsync(int categoryId)
+        {
+            return await _context.Assets
+                .Include(a => a.Category)
+                .Where(a => a.CategoryId == categoryId)
+                .ToListAsync();
+        }
     }
 }
